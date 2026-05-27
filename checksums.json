@@ -671,6 +671,13 @@
 			"A": {"x": false, "y": "E2D1"}
 		}
 	},
+	"346": {
+		"hwid": 1,
+		"model": "fx-72F",
+		"checksums": {
+			"A": {}
+		}
+	},
 	"347": {
 		"hwid": 2,
 		"model": "fx-50FH II",
