@@ -295,7 +295,8 @@
 		"model": "Graph Light+",
 		"checksums": {
 			"S?": {"z": true},
-			"P2": {"y": "1E7F", "z": true}
+			"P2": {"y": "1E7F", "z": true},
+			"A": {"y": "3D7A"}
 		}
 	},
 	"200": {
@@ -846,7 +847,8 @@
 		"hwid": 6,
 		"model": "fx-92+ Collège",
 		"checksums": {
-			"P2": {"y": "4A19", "z": true}
+			"P2": {"y": "4A19", "z": true},
+			"A": {"y": "D881"}
 		}
 	},
 	"521": {
