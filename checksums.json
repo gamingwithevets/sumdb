@@ -267,13 +267,6 @@
 			"A": {"y": "6366"}
 		}
 	},
-	"046": {
-		"hwid": 5,
-		"model": "fx-570MY CW (unreleased)",
-		"checksums": {
-			"A": {}
-		}
-	},
 	"047": {
 		"hwid": 5,
 		"model": "fx-810DE CW",
@@ -902,6 +895,14 @@
 		"checksums": {
 			"A": {}
 		}
+	},
+	"544": {
+		"hwid": 6,
+		"model": "fx-8200 AU II"
+	},
+	"546": {
+		"hwid": 6,
+		"model": "fx-570MY CW"
 	},
 	"593": {
 		"hwid": 6,
