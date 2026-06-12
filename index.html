@@ -171,7 +171,7 @@
 						// Formatting Revision Text based on Prefix
 						let revDisplay = "";
 						if (["EY", "FY"].includes(prefix)) {
-							revDisplay = `V.<b>${rev}</b>`;
+							revDisplay = info.w ? `V.<b>${rev}</b>` : `Ver<b>${rev}</b>`;
 						} else if (["AY", "GY", "LY", "CY"].includes(prefix)) {
 							revDisplay = `Ver<b>${rev}</b>`;
 						} else {
@@ -179,7 +179,7 @@
 						}
 
 						const checksumDisplay = info.y ? `<span class="chk-hex">${info.y}</span>` : "";
-						const boxClass = ["EY", "FY"].includes(prefix) ? "rev-ey" : "rev-standard";
+						const boxClass = ["EY", "FY"].includes(prefix) && info.w ? "rev-ey" : "rev-standard";
 						
 						checkContent += `
 							<div class="revision-box ${boxClass}">
