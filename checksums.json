@@ -513,7 +513,10 @@
 	},
 	"254": {
 		"hwid": 4,
-		"model": "fx-570SP X"
+		"model": "fx-570SP X",
+		"checksums": {
+			"A": {"x": false}
+		}
 	},
 	"255": {
 		"hwid": 4,
