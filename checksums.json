@@ -202,21 +202,21 @@
 	},
 	"029": {
 		"hwid": 5,
-		"model": "fx-JP500 CW",
+		"model": "fx-JP500CW",
 		"checksums": {
 			"A": {"y": "725C"}
 		}
 	},
 	"030": {
 		"hwid": 5,
-		"model": "fx-JP700 CW",
+		"model": "fx-JP700CW",
 		"checksums": {
 			"A": {"y": "3BB4"}
 		}
 	},
 	"031": {
 		"hwid": 5,
-		"model": "fx-JP900 CW",
+		"model": "fx-JP900CW",
 		"checksums": {
 			"A": {"y": "4A91"}
 		}
