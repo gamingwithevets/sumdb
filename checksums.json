@@ -877,6 +877,18 @@
 		"hwid": 6,
 		"model": "fx-999CN CW II"
 	},
+	"529": {
+		"hwid": 6,
+		"model": "fx-JP500CWS"
+	},
+	"530": {
+		"hwid": 6,
+		"model": "fx-JP700CWS"
+	},
+	"531": {
+		"hwid": 6,
+		"model": "fx-JP900CWS"
+	},
 	"535": {
 		"hwid": 6,
 		"model": "fx-97SG CW"
