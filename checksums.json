@@ -854,6 +854,13 @@
 			"A": {}
 		}
 	},
+	"523": {
+		"hwid": 6,
+		"model": "fx-880BTG PLUS",
+		"checksums": {
+			"A": {"y": "B197"}
+		}
+	},
 	"524": {
 		"hwid": 6,
 		"model": "fx-82CN CW II"
