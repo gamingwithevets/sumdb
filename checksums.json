@@ -1,148 +1,183 @@
 {
 	"ES013": {
 		"checksums": {
-			"P3": "fx-82ES, fx-350ES (very early version)"
+			"P3": [
+				{"name": "fx-82ES"},
+				{"name": "fx-350ES", "note": "very early version"}
+			]
 		}
 	},
 	"ES015": {
 		"checksums": {
-			"P0": "FC-200V",
-			"P3": "FC-100V"
+			"P0": [
+				{"name": "FC-200V"}
+			],
+			"P3": [
+				{"name": "FC-100V"}
+			]
 		}
 	},
 	"ES017": {
 		"checksums": {
-			"P0": "fx-92 Collège 2D"
+			"P0": [
+				{"name": "fx-92 Collège 2D"}
+			]
 		}
 	},
 	"ES018": {
 		"checksums": {
-			"P0": "fx-570ES, fx-991ES, fx-115ES",
-			"P1": "fx-370ES, fx-912ES",
-			"P2": "fx-500ES",
-			"P3": "fx-82ES, fx-83ES, fx-85ES, fx-300ES, fx-350ES"
+			"P0": [
+				{"name": "fx-570ES"},
+				{"name": "fx-991ES"},
+				{"name": "fx-115ES"}
+			],
+			"P1": [
+				{"name": "fx-370ES"},
+				{"name": "fx-912ES"}
+			],
+			"P2": [
+				{"name": "fx-500ES"}
+			],
+			"P3": [
+				{"name": "fx-82ES"},
+				{"name": "fx-83ES"},
+				{"name": "fx-85ES"},
+				{"name": "fx-300ES"},
+				{"name": "fx-350ES"}
+			]
 		}
 	},
 	"ES021": {
 		"checksums": {
-			"P1": "fx-82AU",
-			"P3": "fx-82ES (special version)"
+			"P1": [
+				{"name": "fx-82AU"}
+			],
+			"P3": [
+				{"name": "fx-82ES", "note": "special version"}
+			]
 		}
 	},
 	"ES026": {
 		"checksums": {
-			"P3": "fx-50F PLUS"
+			"P3": [
+				{"name": "fx-50F PLUS"}
+			]
 		}
 	},
 	"ES028": {
 		"checksums": {
-			"P0": "fx-50FH"
+			"P0": [
+				{"name": "fx-50FH"}
+			]
 		}
 	},
 	"ESA27": {
 		"checksums": {
-			"P0": "fx-5800P"
+			"P0": [
+				{"name": "fx-5800P"}
+			]
 		}
 	},
 	"001": {
 		"hwid": 5,
-		"model": "fx-82CW",
+		"model": [{"name": "fx-82CW"}],
 		"checksums": {
 			"A": {}
 		}
 	},
 	"002": {
 		"hwid": 5,
-		"model": "fx-85CW"
+		"model": [{"name": "fx-85CW"}]
 	},
 	"003": {
 		"hwid": 5,
-		"model": "fx-350CW"
+		"model": [{"name": "fx-350CW"}]
 	},
 	"004": {
 		"hwid": 5,
-		"model": "fx-570CW",
+		"model": [{"name": "fx-570CW"}],
 		"checksums": {
 			"A": {"y": "E15C"}
 		}
 	},
 	"005": {
 		"hwid": 5,
-		"model": "fx-991CW",
+		"model": [{"name": "fx-991CW"}],
 		"checksums": {
 			"A": {"y": "E05B"}
 		}
 	},
 	"006": {
 		"hwid": 5,
-		"model": "fx-92 Collège",
+		"model": [{"name": "fx-92 Collège"}],
 		"checksums": {
 			"A": {"y": "E111"}
 		}
 	},
 	"007": {
 		"hwid": 5,
-		"model": "fx-92B Secondaire",
+		"model": [{"name": "fx-92B Secondaire"}],
 		"checksums": {
 			"A": {"y": "6930"}
 		}
 	},
 	"008": {
 		"hwid": 5,
-		"model": "fx-82SP CW",
+		"model": [{"name": "fx-82SP CW"}],
 		"checksums": {
 			"A": {"y": "206B"}
 		}
 	},
 	"009": {
 		"hwid": 5,
-		"model": "fx-85SP CW"
+		"model": [{"name": "fx-85SP CW"}]
 	},
 	"010": {
 		"hwid": 5,
-		"model": "fx-570SP CW",
+		"model": [{"name": "fx-570SP CW"}],
 		"checksums": {
 			"A": {"y": "08DE"}
 		}
 	},
 	"011": {
 		"hwid": 5,
-		"model": "fx-991SP CW",
+		"model": [{"name": "fx-991SP CW"}],
 		"checksums": {
 			"A": {"y": "B293"}
 		}
 	},
 	"012": {
 		"hwid": 5,
-		"model": "fx-82DE CW",
+		"model": [{"name": "fx-82DE CW"}],
 		"checksums": {
 			"A": {"y": "73BE"}
 		}
 	},
 	"013": {
 		"hwid": 5,
-		"model": "fx-85DE CW",
+		"model": [{"name": "fx-85DE CW"}],
 		"checksums": {
 			"A": {"y": "72BD"}
 		}
 	},
 	"014": {
 		"hwid": 5,
-		"model": "fx-87DE CW",
+		"model": [{"name": "fx-87DE CW"}],
 		"checksums": {
 			"A": {"y": "4B6B"}
 		}
 	},
 	"015": {
 		"hwid": 5,
-		"model": "fx-991DE CW",
+		"model": [{"name": "fx-991DE CW"}],
 		"checksums": {
 			"A": {"y": "A55F"}
 		}
 	},
 	"016": {
 		"hwid": 5,
-		"model": "fx-800DE CW / fx-800DE Z (pre-release name)",
+		"model": [{"name": "fx-800DE CW"}],
+		"prenames": [{"name": "fx-800DE Z"}],
 		"checksums": {
 			"S2": {"y": "8FCD", "z": true},
 			"A": {"y": "BC9D"}
@@ -150,35 +185,35 @@
 	},
 	"021": {
 		"hwid": 5,
-		"model": "fx-82NL",
+		"model": [{"name": "fx-82NL"}],
 		"checksums": {
 			"B": {"y": "25C6"}
 		}
 	},
 	"023": {
 		"hwid": 5,
-		"model": "fx-880BTG",
+		"model": [{"name": "fx-880BTG"}],
 		"checksums": {
 			"B": {"y": "8113"}
 		}
 	},
 	"024": {
 		"hwid": 5,
-		"model": "fx-82CN CW",
+		"model": [{"name": "fx-82CN CW"}],
 		"checksums": {
 			"A": {"y": "6657"}
 		}
 	},
 	"025": {
 		"hwid": 5,
-		"model": "fx-95CN CW",
+		"model": [{"name": "fx-95CN CW"}],
 		"checksums": {
 			"A": {"y": "F89E"}
 		}
 	},
 	"026": {
 		"hwid": 5,
-		"model": "fx-350CN CW",
+		"model": [{"name": "fx-350CN CW"}],
 		"checksums": {
 			"A": {},
 			"B": {"y": "9DE7"}
@@ -186,7 +221,7 @@
 	},
 	"027": {
 		"hwid": 5,
-		"model": "fx-991CN CW",
+		"model": [{"name": "fx-991CN CW"}],
 		"checksums": {
 			"A": {"y": "B5F6"},
 			"B": {"y": "E460"}
@@ -194,7 +229,7 @@
 	},
 	"028": {
 		"hwid": 5,
-		"model": "fx-999CN CW",
+		"model": [{"name": "fx-999CN CW"}],
 		"checksums": {
 			"A": {"y": "AEF6"},
 			"B": {"y": "D7BB"}
@@ -202,81 +237,81 @@
 	},
 	"029": {
 		"hwid": 5,
-		"model": "fx-JP500CW",
+		"model": [{"name": "fx-JP500CW"}],
 		"checksums": {
 			"A": {"y": "725C"}
 		}
 	},
 	"030": {
 		"hwid": 5,
-		"model": "fx-JP700CW",
+		"model": [{"name": "fx-JP700CW"}],
 		"checksums": {
 			"A": {"y": "3BB4"}
 		}
 	},
 	"031": {
 		"hwid": 5,
-		"model": "fx-JP900CW",
+		"model": [{"name": "fx-JP900CW"}],
 		"checksums": {
 			"A": {"y": "4A91"}
 		}
 	},
 	"032": {
 		"hwid": 5,
-		"model": "fx-550AZ",
+		"model": [{"name": "fx-550AZ"}],
 		"checksums": {
 			"A": {"y": "0706"}
 		}
 	},
 	"036": {
 		"hwid": 5,
-		"model": "fx-82LA CW",
+		"model": [{"name": "fx-82LA CW"}],
 		"checksums": {
 			"B": {}
 		}
 	},
 	"038": {
 		"hwid": 5,
-		"model": "fx-570LA CW"
+		"model": [{"name": "fx-570LA CW"}]
 	},
 	"039": {
 		"hwid": 5,
-		"model": "fx-991LA CW",
+		"model": [{"name": "fx-991LA CW"}],
 		"checksums": {
 			"C": {"y": "7768"}
 		}
 	},
 	"040": {
 		"hwid": 5,
-		"model": "fx-83GT CW",
+		"model": [{"name": "fx-83GT CW"}],
 		"checksums": {
 			"A": {"y": "DA5C"}
 		}
 	},
 	"041": {
 		"hwid": 5,
-		"model": "fx-85GT CW",
+		"model": [{"name": "fx-85GT CW"}],
 		"checksums": {
 			"A": {"y": "D95B"}
 		}
 	},
 	"044": {
 		"hwid": 5,
-		"model": "fx-8200 AU",
+		"model": [{"name": "fx-8200 AU"}],
 		"checksums": {
 			"A": {"y": "6366"}
 		}
 	},
 	"047": {
 		"hwid": 5,
-		"model": "fx-810DE CW",
+		"model": [{"name": "fx-810DE CW"}],
 		"checksums": {
 			"A": {"y": "2D34"}
 		}
 	},
 	"090": {
 		"hwid": 5,
-		"model": "Graph Light",
+		"model": [{"name": "Graph Light"}],
 		"checksums": {
 			"S1": {"y": "75E6", "z": true},
 			"P2": {"y": "6E66", "z": true},
@@ -285,7 +320,7 @@
 	},
 	"091": {
 		"hwid": 5,
-		"model": "Graph Light+",
+		"model": [{"name": "Graph Light+"}],
 		"checksums": {
 			"S?": {"z": true},
 			"P2": {"y": "1E7F", "z": true},
@@ -294,82 +329,82 @@
 	},
 	"200": {
 		"hwid": 4,
-		"model": "FC-100V 2nd edition",
+		"model": [{"name": "FC-100V 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "8687"}
 		}
 	},
 	"201": {
 		"hwid": 4,
-		"model": "FC-200V 2nd edition",
+		"model": [{"name": "FC-200V 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "868C"}
 		}
 	},
 	"213": {
 		"hwid": 4,
-		"model": "fx-83GT X",
+		"model": [{"name": "fx-83GT X"}],
 		"checksums": {
 			"A": {"x": false, "y": "01D3"}
 		}
 	},
 	"214": {
 		"hwid": 4,
-		"model": "fx-85GT X",
+		"model": [{"name": "fx-85GT X"}],
 		"checksums": {
 			"A": {"x": false, "y": "00D3"}
 		}
 	},
 	"215": {
 		"hwid": 4,
-		"model": "fx-82DE X",
+		"model": [{"name": "fx-82DE X"}],
 		"checksums": {
 			"A": {"x": false, "y": "F357"}
 		}
 	},
 	"216": {
 		"hwid": 4,
-		"model": "fx-85DE X",
+		"model": [{"name": "fx-85DE X"}],
 		"checksums": {
 			"A": {"x": false, "y": "F257"}
 		}
 	},
 	"217": {
 		"hwid": 4,
-		"model": "fx-991RS X",
+		"model": [{"name": "fx-991RS X"}],
 		"checksums": {
 			"A": {"x": false, "y": "2F15"}
 		}
 	},
 	"220": {
 		"hwid": 4,
-		"model": "fx-82LA PLUS",
+		"model": [{"name": "fx-82LA PLUS"}],
 		"checksums": {
 			"A": {"x": true,  "y": "F248"}
 		}
 	},
 	"221": {
 		"hwid": 4,
-		"model": "fx-350LA PLUS"
+		"model": [{"name": "fx-350LA PLUS"}]
 	},
 	"222": {
 		"hwid": 4,
-		"model": "fx-570LA PLUS"
+		"model": [{"name": "fx-570LA PLUS"}]
 	},
 	"223": {
 		"hwid": 4,
-		"model": "fx-991LA PLUS"
+		"model": [{"name": "fx-991LA PLUS"}]
 	},
 	"225": {
 		"hwid": 4,
-		"model": "fx-87DE PLUS",
+		"model": [{"name": "fx-87DE PLUS"}],
 		"checksums": {
 			"A": {"x": true,  "y": "0B61"}
 		}
 	},
 	"230": {
 		"hwid": 4,
-		"model": "fx-82EX",
+		"model": [{"name": "fx-82EX"}],
 		"checksums": {
 			"A": {"x": false},
 			"E": {"x": false, "y": "3C39"}
@@ -377,18 +412,18 @@
 	},
 	"231": {
 		"hwid": 4,
-		"model": "fx-85EX"
+		"model": [{"name": "fx-85EX"}]
 	},
 	"232": {
 		"hwid": 4,
-		"model": "fx-350EX",
+		"model": [{"name": "fx-350EX"}],
 		"checksums": {
 			"E": {"x": false, "y": "3A39"}
 		}
 	},
 	"234": {
 		"hwid": 4,
-		"model": "fx-570EX",
+		"model": [{"name": "fx-570EX"}],
 		"checksums": {
 			"A": {"x": false, "y": "40B0"},
 			"B": {"x": false, "y": "FD54"},
@@ -397,7 +432,7 @@
 	},
 	"235": {
 		"hwid": 4,
-		"model": "fx-991EX",
+		"model": [{"name": "fx-991EX"}],
 		"checksums": {
 			"A": {"x": false, "y": "3FB0"},
 			"B": {"x": false, "y": "FC54"},
@@ -406,7 +441,7 @@
 	},
 	"236": {
 		"hwid": 4,
-		"model": "fx-82CN X",
+		"model": [{"name": "fx-82CN X"}],
 		"checksums": {
 			"A": {"x": false, "y": "068B"},
 			"B": {"x": false, "y": "D5A1"}
@@ -414,7 +449,7 @@
 	},
 	"237": {
 		"hwid": 4,
-		"model": "fx-350CN X",
+		"model": [{"name": "fx-350CN X"}],
 		"checksums": {
 			"A": {"x": false, "y": "058B"},
 			"B": {"x": false, "y": "D4A1"}
@@ -422,7 +457,7 @@
 	},
 	"238": {
 		"hwid": 4,
-		"model": "fx-95CN X",
+		"model": [{"name": "fx-95CN X"}],
 		"checksums": {
 			"A": {"x": false, "y": "D931"},
 			"B": {"x": false, "y": "9517"},
@@ -431,7 +466,7 @@
 	},
 	"239": {
 		"hwid": 4,
-		"model": "fx-991CN X",
+		"model": [{"name": "fx-991CN X"}],
 		"checksums": {
 			"A": {"x": false, "y": "EC3F"},
 			"B": {"x": false, "y": "7C9C"},
@@ -441,14 +476,14 @@
 	},
 	"240": {
 		"hwid": 4,
-		"model": "fx-530AZ",
+		"model": [{"name": "fx-530AZ"}],
 		"checksums": {
 			"A": {"x": false, "y": "20A1"}
 		}
 	},
 	"241": {
 		"hwid": 4,
-		"model": "fx-JP500",
+		"model": [{"name": "fx-JP500"}],
 		"checksums": {
 			"A": {"x": false},
 			"B": {"x": false, "y": "A340"}
@@ -456,14 +491,14 @@
 	},
 	"242": {
 		"hwid": 4,
-		"model": "fx-JP700",
+		"model": [{"name": "fx-JP700"}],
 		"checksums": {
 			"A": {"x": false, "y": "6A2B"}
 		}
 	},
 	"243": {
 		"hwid": 4,
-		"model": "fx-JP900",
+		"model": [{"name": "fx-JP900"}],
 		"checksums": {
 			"A": {"x": false, "y": "A0B7"},
 			"F": {"x": false, "y": "8542"}
@@ -471,21 +506,21 @@
 	},
 	"246": {
 		"hwid": 4,
-		"model": "fx-92 Spéciale Collège",
+		"model": [{"name": "fx-92 Spéciale Collège"}],
 		"checksums": {
 			"A": {"x": false, "y": "3D35"}
 		}
 	},
 	"247": {
 		"hwid": 4,
-		"model": "fx-92B Spéciale Collège",
+		"model": [{"name": "fx-92B Spéciale Collège"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"250": {
 		"hwid": 4,
-		"model": "fx-87DE X",
+		"model": [{"name": "fx-87DE X"}],
 		"checksums": {
 			"A": {"x": false, "y": "3D9C"},
 			"F": {"x": false, "y": "8142"}
@@ -493,7 +528,7 @@
 	},
 	"251": {
 		"hwid": 4,
-		"model": "fx-991DE X",
+		"model": [{"name": "fx-991DE X"}],
 		"checksums": {
 			"A": {"x": false, "y": "D906"},
 			"E": {"x": false, "y": "ACE6"},
@@ -502,53 +537,53 @@
 	},
 	"252": {
 		"hwid": 4,
-		"model": "fx-82SP X",
+		"model": [{"name": "fx-82SP X"}],
 		"checksums": {
 			"A": {"x": false, "y": "83F0"}
 		}
 	},
 	"253": {
 		"hwid": 4,
-		"model": "fx-350SP X"
+		"model": [{"name": "fx-350SP X"}]
 	},
 	"254": {
 		"hwid": 4,
-		"model": "fx-570SP X",
+		"model": [{"name": "fx-570SP X"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"255": {
 		"hwid": 4,
-		"model": "fx-991SP X",
+		"model": [{"name": "fx-991SP X"}],
 		"checksums": {
 			"A": {"x": false, "y": "1FF7"}
 		}
 	},
 	"256": {
 		"hwid": 4,
-		"model": "fx-82AR X",
+		"model": [{"name": "fx-82AR X"}],
 		"checksums": {
 			"A": {"x": false, "y": "4CCD"}
 		}
 	},
 	"257": {
 		"hwid": 4,
-		"model": "fx-95AR X",
+		"model": [{"name": "fx-95AR X"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"258": {
 		"hwid": 4,
-		"model": "fx-570AR X",
+		"model": [{"name": "fx-570AR X"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"259": {
 		"hwid": 4,
-		"model": "fx-991AR X",
+		"model": [{"name": "fx-991AR X"}],
 		"checksums": {
 			"A": {"x": false, "y": "097B"},
 			"E": {"x": false, "y": "86E5"}
@@ -556,7 +591,7 @@
 	},
 	"266": {
 		"hwid": 4,
-		"model": "fx-82SP X II",
+		"model": [{"name": "fx-82SP X II"}],
 		"checksums": {
 			"A": {"x": false},
 			"E": {"x": false, "y": "293D"}
@@ -564,36 +599,36 @@
 	},
 	"267": {
 		"hwid": 4,
-		"model": "fx-350SP X II"
+		"model": [{"name": "fx-350SP X II"}]
 	},
 	"268": {
 		"hwid": 4,
-		"model": "fx-570SP X II",
+		"model": [{"name": "fx-570SP X II"}],
 		"checksums": {
 			"F": {"x": false}
 		}
 	},
 	"269": {
 		"hwid": 4,
-		"model": "fx-991SP X II",
+		"model": [{"name": "fx-991SP X II"}],
 		"checksums": {
 			"F": {"x": false, "y": "EEE4"}
 		}
 	},
 	"270": {
 		"hwid": 4,
-		"model": "fx-82LA X",
+		"model": [{"name": "fx-82LA X"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"271": {
 		"hwid": 4,
-		"model": "fx-350LA X"
+		"model": [{"name": "fx-350LA X"}]
 	},
 	"272": {
 		"hwid": 4,
-		"model": "fx-570LA X",
+		"model": [{"name": "fx-570LA X"}],
 		"checksums": {
 			"A": {"x": false},
 			"F": {"x": false}
@@ -601,14 +636,14 @@
 	},
 	"273": {
 		"hwid": 4,
-		"model": "fx-991LA X",
+		"model": [{"name": "fx-991LA X"}],
 		"checksums": {
 			"F": {"x": false, "y": "ECE5"}
 		}
 	},
 	"291": {
 		"hwid": 4,
-		"model": "fx-82CE X",
+		"model": [{"name": "fx-82CE X"}],
 		"checksums": {
 			"A": {"x": false, "y": "E19D"},
 			"E": {"x": false, "y": "5119"}
@@ -616,18 +651,18 @@
 	},
 	"292": {
 		"hwid": 4,
-		"model": "fx-85CE X"
+		"model": [{"name": "fx-85CE X"}]
 	},
 	"293": {
 		"hwid": 4,
-		"model": "fx-350CE X",
+		"model": [{"name": "fx-350CE X"}],
 		"checksums": {
 			"E": {"x": false, "y": "4F19"}
 		}
 	},
 	"294": {
 		"hwid": 4,
-		"model": "fx-991CE X",
+		"model": [{"name": "fx-991CE X"}],
 		"checksums": {
 			"A": {"x": false},
 			"F": {"x": false, "y": "B28D"}
@@ -635,56 +670,56 @@
 	},
 	"295": {
 		"hwid": 4,
-		"model": "fx-92+ Spéciale Collège",
+		"model": [{"name": "fx-92+ Spéciale Collège"}],
 		"checksums": {
 			"A": {"x": false, "y": "4502"}
 		}
 	},
 	"296": {
 		"hwid": 4,
-		"model": "fx-85SP X II",
+		"model": [{"name": "fx-85SP X II"}],
 		"checksums": {
 			"A": {"x": false, "y": "28C6"}
 		}
 	},
 	"297": {
 		"hwid": 4,
-		"model": "fx-97SG X",
+		"model": [{"name": "fx-97SG X"}],
 		"checksums": {
 			"E": {"x": false, "y": "6F25"}
 		}
 	},
 	"298": {
 		"hwid": 4,
-		"model": "fx-580VN X",
+		"model": [{"name": "fx-580VN X"}],
 		"checksums": {
 			"A": {"x": false, "y": "BB26"}
 		}
 	},
 	"345": {
 		"hwid": 2,
-		"model": "fx-3650P II",
+		"model": [{"name": "fx-3650P II"}],
 		"checksums": {
 			"A": {"x": false, "y": "E2D1"}
 		}
 	},
 	"346": {
 		"hwid": 1,
-		"model": "fx-72F",
+		"model": [{"name": "fx-72F"}],
 		"checksums": {
 			"A": {}
 		}
 	},
 	"347": {
 		"hwid": 2,
-		"model": "fx-50FH II",
+		"model": [{"name": "fx-50FH II"}],
 		"checksums": {
 			"A": {"x": false, "y": "DF51"}
 		}
 	},
 	"450": {
 		"hwid": 2,
-		"model": "fx-82ES PLUS",
+		"model": [{"name": "fx-82ES PLUS"}],
 		"checksums": {
 			"A": {"x": false, "y": "713C"},
 			"B": {"x": false, "y": "0E3F"},
@@ -693,18 +728,18 @@
 	},
 	"451": {
 		"hwid": 2,
-		"model": "fx-85ES PLUS"
+		"model": [{"name": "fx-85ES PLUS"}]
 	},
 	"452": {
 		"hwid": 2,
-		"model": "fx-350ES PLUS",
+		"model": [{"name": "fx-350ES PLUS"}],
 		"checksums": {
 			"E": {"x": true,  "y": "6377"}
 		}
 	},
 	"453": {
 		"hwid": 2,
-		"model": "fx-95ES PLUS",
+		"model": [{"name": "fx-95ES PLUS"}],
 		"checksums": {
 			"A": {"x": false, "y": "F929"},
 			"B": {"x": false, "y": "70CA"},
@@ -713,7 +748,7 @@
 	},
 	"454": {
 		"hwid": 2,
-		"model": "fx-570ES PLUS",
+		"model": [{"name": "fx-570ES PLUS"}],
 		"checksums": {
 			"A": {"x": false, "y": "CD05"},
 			"E": {"x": true,  "y": "8929"},
@@ -722,7 +757,7 @@
 	},
 	"455": {
 		"hwid": 2,
-		"model": "fx-991ES PLUS",
+		"model": [{"name": "fx-991ES PLUS"}],
 		"checksums": {
 			"A": {"x": false, "y": "CD04"},
 			"B": {"x": false, "y": "87ED"},
@@ -732,7 +767,7 @@
 	},
 	"456": {
 		"hwid": 2,
-		"model": "fx-373ES",
+		"model": [{"name": "fx-373ES"}],
 		"checksums": {
 			"A": {"x": false, "y": "1C22"},
 			"B": {"x": true,  "y": "7A95"}
@@ -740,14 +775,14 @@
 	},
 	"457": {
 		"hwid": 2,
-		"model": "fx-913ES",
+		"model": [{"name": "fx-913ES"}],
 		"checksums": {
 			"A": {"x": false, "y": "1C09"}
 		}
 	},
 	"458": {
 		"hwid": 2,
-		"model": "fx-95SG PLUS",
+		"model": [{"name": "fx-95SG PLUS"}],
 		"checksums": {
 			"A": {"x": false},
 			"B": {"x": false, "y": "4C05"},
@@ -756,7 +791,7 @@
 	},
 	"459": {
 		"hwid": 2,
-		"model": "fx-82AU PLUS",
+		"model": [{"name": "fx-82AU PLUS"}],
 		"checksums": {
 			"A": {"x": false},
 			"B": {"x": false},
@@ -765,7 +800,7 @@
 	},
 	"460": {
 		"hwid": 2,
-		"model": "fx-500VN PLUS",
+		"model": [{"name": "fx-500VN PLUS"}],
 		"checksums": {
 			"B": {"x": false, "y": "699D"},
 			"C": {"x": false},
@@ -774,7 +809,7 @@
 	},
 	"461": {
 		"hwid": 2,
-		"model": "fx-92B Collège 2D+",
+		"model": [{"name": "fx-92B Collège 2D+"}],
 		"checksums": {
 			"B": {"x": false},
 			"E": {"x": true}
@@ -782,7 +817,7 @@
 	},
 	"462": {
 		"hwid": 2,
-		"model": "fx-86DE PLUS (launch models)",
+		"model": [{"name": "fx-86DE PLUS", "note": "launch models"}],
 		"checksums": {
 			"B": {"x": false},
 			"C": {"x": false}
@@ -790,7 +825,7 @@
 	},
 	"463": {
 		"hwid": 2,
-		"model": "fx-92 Collège 2D+ (launch models)",
+		"model": [{"name": "fx-92 Collège 2D+", "note": "launch models"}],
 		"checksums": {
 			"A": {"x": false, "y": "22BF"},
 			"B": {"x": false}
@@ -798,7 +833,8 @@
 	},
 	"465": {
 		"hwid": 2,
-		"model": "fx-83GT PLUS / fx-83ES PLUS (pre-release name)",
+		"model": [{"name": "fx-83GT PLUS"}],
+		"prenames": [{"name": "fx-83ES PLUS"}],
 		"checksums": {
 			"C": {"x": false},
 			"G": {"x": true,  "y": "7A03"}
@@ -806,11 +842,11 @@
 	},
 	"466": {
 		"hwid": 2,
-		"model": "fx-573ES"
+		"model": [{"name": "fx-573ES"}]
 	},
 	"467": {
 		"hwid": 2,
-		"model": "fx-993ES / fx-510AZ",
+		"model": [{"name": "fx-993ES"}, {"name": "fx-510AZ"}],
 		"checksums": {
 			"A": {"x": false, "y": "23F8"},
 			"B": {"x": true,  "y": "3D37"}
@@ -818,7 +854,7 @@
 	},
 	"468": {
 		"hwid": 2,
-		"model": "fx-92 Collège 2D+",
+		"model": [{"name": "fx-92 Collège 2D+"}],
 		"checksums": {
 			"A": {"x": false, "y": "D884"},
 			"B": {"x": true,  "y": "BEA8"}
@@ -826,14 +862,14 @@
 	},
 	"477": {
 		"hwid": 2,
-		"model": "OH-300ES PLUS",
+		"model": [{"name": "OH-300ES PLUS"}],
 		"checksums": {
 			"F": {"x": true,  "y": "6301"}
 		}
 	},
 	"505": {
 		"hwid": 6,
-		"model": "fx-9910CW 2nd edition",
+		"model": [{"name": "fx-9910CW 2nd edition"}],
 		"checksums": {
 			"P2": {"y": "9D45", "z": true},
 			"A": {"y": "F8D4"}
@@ -841,7 +877,7 @@
 	},
 	"506": {
 		"hwid": 6,
-		"model": "fx-92+ Collège",
+		"model": [{"name": "fx-92+ Collège"}],
 		"checksums": {
 			"P2": {"y": "4A19", "z": true},
 			"A": {"y": "D881"}
@@ -849,142 +885,142 @@
 	},
 	"521": {
 		"hwid": 6,
-		"model": "fx-82NL+",
+		"model": [{"name": "fx-82NL+"}],
 		"checksums": {
 			"A": {}
 		}
 	},
 	"523": {
 		"hwid": 6,
-		"model": "fx-880BTG PLUS",
+		"model": [{"name": "fx-880BTG PLUS"}],
 		"checksums": {
 			"A": {"y": "B197"}
 		}
 	},
 	"524": {
 		"hwid": 6,
-		"model": "fx-82CN CW II"
+		"model": [{"name": "fx-82CN CW II"}]
 	},
 	"525": {
 		"hwid": 6,
-		"model": "fx-95CN CW II"
+		"model": [{"name": "fx-95CN CW II"}]
 	},
 	"526": {
 		"hwid": 6,
-		"model": "fx-350CN CW II"
+		"model": [{"name": "fx-350CN CW II"}]
 	},
 	"527": {
 		"hwid": 6,
-		"model": "fx-991CN CW II",
+		"model": [{"name": "fx-991CN CW II"}],
 		"checksums": {
 			"A": {"y": "428D"}
 		}
 	},
 	"528": {
 		"hwid": 6,
-		"model": "fx-999CN CW II"
+		"model": [{"name": "fx-999CN CW II"}]
 	},
 	"529": {
 		"hwid": 6,
-		"model": "fx-JP500CWS"
+		"model": [{"name": "fx-JP500CWS"}]
 	},
 	"530": {
 		"hwid": 6,
-		"model": "fx-JP700CWS"
+		"model": [{"name": "fx-JP700CWS"}]
 	},
 	"531": {
 		"hwid": 6,
-		"model": "fx-JP900CWS"
+		"model": [{"name": "fx-JP900CWS"}]
 	},
 	"535": {
 		"hwid": 6,
-		"model": "fx-97SG CW"
+		"model": [{"name": "fx-97SG CW"}]
 	},
 	"540": {
 		"hwid": 6,
-		"model": "fx-83GT CW+ 2nd edition",
+		"model": [{"name": "fx-83GT CW+ 2nd edition"}],
 		"checksums": {
 			"A": {}
 		}
 	},
 	"541": {
 		"hwid": 6,
-		"model": "fx-85GT CW+ 2nd edition"
+		"model": [{"name": "fx-85GT CW+ 2nd edition"}]
 	},
 	"542": {
 		"hwid": 6,
-		"model": "fx-991CW+ UK 2nd edition",
+		"model": [{"name": "fx-991CW+ UK 2nd edition"}],
 		"checksums": {
 			"A": {}
 		}
 	},
 	"544": {
 		"hwid": 6,
-		"model": "fx-8200 AU II"
+		"model": [{"name": "fx-8200 AU II"}]
 	},
 	"546": {
 		"hwid": 6,
-		"model": "fx-570MY CW"
+		"model": [{"name": "fx-570MY CW"}]
 	},
 	"593": {
 		"hwid": 6,
-		"model": "FC-01A",
+		"model": [{"name": "FC-01A"}],
 		"checksums": {
 			"A": {"w": true, "y": "A226"}
 		}
 	},
 	"707": {
 		"hwid": 3,
-		"model": "fx-55 PLUS",
+		"model": [{"name": "fx-55 PLUS"}],
 		"checksums": {
 			"A": {"x": false, "y": "FC53"}
 		}
 	},
 	"708": {
 		"hwid": 3,
-		"model": "fx-96SG PLUS",
+		"model": [{"name": "fx-96SG PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "71F1"}
 		}
 	},
 	"709": {
 		"hwid": 3,
-		"model": "fx-991ID PLUS",
+		"model": [{"name": "fx-991ID PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "7524"}
 		}
 	},
 	"710": {
 		"hwid": 3,
-		"model": "fx-570VN PLUS",
+		"model": [{"name": "fx-570VN PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "D457"}
 		}
 	},
 	"711": {
 		"hwid": 3,
-		"model": "fx-82AU PLUS II",
+		"model": [{"name": "fx-82AU PLUS II"}],
 		"checksums": {
 			"A": {"x": true, "y": "0A69"}
 		}
 	},
 	"712": {
 		"hwid": 3,
-		"model": "fx-100AU PLUS",
+		"model": [{"name": "fx-100AU PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "B7C6"}
 		}
 	},
 	"713": {
 		"hwid": 3,
-		"model": "fx-82ES PLUS A",
+		"model": [{"name": "fx-82ES PLUS A"}],
 		"checksums": {
 			"A": {"x": true, "y": "F854"}
 		}
 	},
 	"717": {
 		"hwid": 3,
-		"model": "fx-375ES",
+		"model": [{"name": "fx-375ES"}],
 		"checksums": {
 			"A": {"x": true, "y": "6A23"},
 			"B": {"x": true}
@@ -992,7 +1028,7 @@
 	},
 	"718": {
 		"hwid": 3,
-		"model": "fx-915ES",
+		"model": [{"name": "fx-915ES"}],
 		"checksums": {
 			"A": {"x": true, "y": "F0E2"},
 			"B": {"x": true, "y": "AFFB"}
@@ -1000,7 +1036,7 @@
 	},
 	"719": {
 		"hwid": 3,
-		"model": "fx-995ES / fx-520AZ",
+		"model": [{"name": "fx-995ES"}, {"name": "fx-520AZ"}],
 		"checksums": {
 			"A": {"x": true, "y": "D6D0"},
 			"B": {"x": true, "y": "A1FB"}
@@ -1008,7 +1044,7 @@
 	},
 	"720": {
 		"hwid": 3,
-		"model": "fx-85GT PLUS",
+		"model": [{"name": "fx-85GT PLUS"}],
 		"checksums": {
 			"D": {"x": true},
 			"G": {"x": true, "y": "7A04"}
@@ -1016,25 +1052,25 @@
 	},
 	"721": {
 		"hwid": 3,
-		"model": "fx-82DE PLUS",
+		"model": [{"name": "fx-82DE PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "59CB"}
 		}
 	},
 	"722": {
 		"hwid": 3,
-		"model": "fx-85DE PLUS"
+		"model": [{"name": "fx-85DE PLUS"}]
 	},
 	"723": {
 		"hwid": 3,
-		"model": "fx-86DE PLUS",
+		"model": [{"name": "fx-86DE PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "5D78"}
 		}
 	},
 	"724": {
 		"hwid": 3,
-		"model": "fx-991DE PLUS",
+		"model": [{"name": "fx-991DE PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "0B80"},
 			"B": {"x": true, "y": "D5F1"}
@@ -1042,14 +1078,14 @@
 	},
 	"725": {
 		"hwid": 3,
-		"model": "fx-82ZA PLUS",
+		"model": [{"name": "fx-82ZA PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "4835"}
 		}
 	},
 	"726": {
 		"hwid": 3,
-		"model": "fx-300ES PLUS",
+		"model": [{"name": "fx-300ES PLUS"}],
 		"checksums": {
 			"A": {"x": true, "y": "341B"},
 			"B": {"x": true}
@@ -1057,7 +1093,7 @@
 	},
 	"727": {
 		"hwid": 3,
-		"model": "fx-115ES PLUS, fx-991ES PLUS C",
+		"model": [{"name": "fx-115ES PLUS"}, {"name": "fx-991ES PLUS C"}],
 		"checksums": {
 			"A": {"x": true, "y": "11B4"},
 			"B": {"x": true, "y": "2D4E"}
@@ -1065,193 +1101,193 @@
 	},
 	"755AX": {
 		"hwid": 3,
-		"model": "fx-CG10"
+		"model": [{"name": "fx-CG10"}]
 	},
 	"755DX": {
 		"hwid": 3,
-		"model": "fx-CG20"
+		"model": [{"name": "fx-CG20"}]
 	},
 	"755EX": {
 		"hwid": 3,
-		"model": "fx-CG20 CN"
+		"model": [{"name": "fx-CG20 CN"}]
 	},
 	"755FX": {
 		"hwid": 3,
-		"model": "fx-CG20 AU"
+		"model": [{"name": "fx-CG20 AU"}]
 	},
 	"805A": {
 		"hwid": 4,
-		"model": "fx-CG500"
+		"model": [{"name": "fx-CG500"}]
 	},
 	"810AY": {
 		"hwid": 4,
-		"model": "fx-CG50"
+		"model": [{"name": "fx-CG50"}]
 	},
 	"810FY": {
 		"hwid": 4,
-		"model": "fx-CG50 AU"
+		"model": [{"name": "fx-CG50 AU"}]
 	},
 	"840": {
 		"hwid": 4,
-		"model": "fx-82ES PLUS 2nd edition",
+		"model": [{"name": "fx-82ES PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "3B36"}
 		}
 	},
 	"841": {
 		"hwid": 4,
-		"model": "fx-85ES PLUS 2nd edition",
+		"model": [{"name": "fx-85ES PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "3B35"}
 		}
 	},
 	"842": {
 		"hwid": 4,
-		"model": "fx-350ES PLUS 2nd edition",
+		"model": [{"name": "fx-350ES PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "3B34"}
 		}
 	},
 	"843": {
 		"hwid": 4,
-		"model": "fx-95ES PLUS 2nd edition",
+		"model": [{"name": "fx-95ES PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "80DD"}
 		}
 	},
 	"844": {
 		"hwid": 4,
-		"model": "fx-570ES PLUS 2nd edition, fx-9910NG PLUS 2nd edition",
+		"model": [{"name": "fx-570ES PLUS 2nd edition"}, {"name": "fx-9910NG PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "7065"}
 		}
 	},
 	"845": {
 		"hwid": 4,
-		"model": "fx-991ES PLUS 2nd edition",
+		"model": [{"name": "fx-991ES PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "7064"}
 		}
 	},
 	"846": {
 		"hwid": 4,
-		"model": "fx-300ES PLUS 2nd edition",
+		"model": [{"name": "fx-300ES PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "2063"}
 		}
 	},
 	"847": {
 		"hwid": 4,
-		"model": "fx-115ES PLUS 2nd edition, fx-991ES PLUS C 2nd edition",
+		"model": [{"name": "fx-115ES PLUS 2nd edition"}, {"name": "fx-991ES PLUS C 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "3C5D"}
 		}
 	},
 	"848": {
 		"hwid": 4,
-		"model": "fx-82ZA PLUS II",
+		"model": [{"name": "fx-82ZA PLUS II"}],
 		"checksums": {
 			"B": {"x": false}
 		}
 	},
 	"849": {
 		"hwid": 4,
-		"model": "fx-991ZA PLUS II",
+		"model": [{"name": "fx-991ZA PLUS II"}],
 		"checksums": {
 			"B": {"x": false, "y": "06B3"}
 		}
 	},
 	"850": {
 		"hwid": 4,
-		"model": "fx-82LA PLUS 2nd edition",
+		"model": [{"name": "fx-82LA PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"851": {
 		"hwid": 4,
-		"model": "fx-350LA PLUS 2nd edition",
+		"model": [{"name": "fx-350LA PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"852": {
 		"hwid": 4,
-		"model": "fx-570LA PLUS 2nd edition",
+		"model": [{"name": "fx-570LA PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"853": {
 		"hwid": 4,
-		"model": "fx-991LA PLUS 2nd edition",
+		"model": [{"name": "fx-991LA PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"856": {
 		"hwid": 4,
-		"model": "fx-87DE PLUS 2nd edition",
+		"model": [{"name": "fx-87DE PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "3E89"}
 		}
 	},
 	"857": {
 		"hwid": 4,
-		"model": "fx-375ES A",
+		"model": [{"name": "fx-375ES A"}],
 		"checksums": {
 			"A": {"x": false, "y": "A4DB"}
 		}
 	},
 	"858": {
 		"hwid": 4,
-		"model": "fx-82ES PLUS A 2nd edition",
+		"model": [{"name": "fx-82ES PLUS A 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "4C20"}
 		}
 	},
 	"859": {
 		"hwid": 4,
-		"model": "fx-991ID PLUS 2nd edition",
+		"model": [{"name": "fx-991ID PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false}
 		}
 	},
 	"860": {
 		"hwid": 4,
-		"model": "fx-570VN PLUS 2nd edition",
+		"model": [{"name": "fx-570VN PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "940B"}
 		}
 	},
 	"861": {
 		"hwid": 4,
-		"model": "fx-991ES PLUS C 2nd edition"
+		"model": [{"name": "fx-991ES PLUS C 2nd edition"}]
 	},
 	"863": {
 		"hwid": 4,
-		"model": "fx-82AU PLUS II 2nd edition",
+		"model": [{"name": "fx-82AU PLUS II 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "D958"}
 		}
 	},
 	"864": {
 		"hwid": 4,
-		"model": "fx-100AU PLUS 2nd edition",
+		"model": [{"name": "fx-100AU PLUS 2nd edition"}],
 		"checksums": {
 			"A": {"x": false, "y": "8A4E"}
 		}
 	},
 	"875": {
 		"hwid": 4,
-		"model": "Graph Math+"
+		"model": [{"name": "Graph Math+"}]
 	},
 	"876": {
 		"hwid": 4,
-		"model": "fx-CG100"
+		"model": [{"name": "fx-CG100"}]
 	},
 	"877": {
 		"hwid": 4,
-		"model": "fx-1AU Graph"
+		"model": [{"name": "fx-1AU Graph"}]
 	}
 }

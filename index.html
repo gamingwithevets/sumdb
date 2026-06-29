@@ -56,7 +56,7 @@
 
 		.ver-code { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 600; color: #fff; }
 		.prefix { color: #666; font-weight: 400; }
-		.model-name { font-weight: 500; }
+		.model-name { font-weight: 400; display: block; }
 		.revision-box { margin-bottom: 8px; padding: 10px; background: #222; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid transparent; }
 		.rev-ey { border-left-color: #3498db; }
 		.rev-standard { border-left-color: #95a5a6; }
@@ -65,6 +65,11 @@
 		.badge-pre { background: #e67e22; color: #000; font-size: 10px; padding: 2px 5px; border-radius: 3px; font-weight: bold; margin-left: 8px; }
 		
 		.no-data { text-align: center; padding: 40px; color: #666; }
+		mark { background: var(--accent); color: #000; border-radius: 2px; padding: 0 2px; }
+		
+		ul.rev-model-list { margin: 0; padding-left: 16px; }
+		ul.rev-model-list li { margin-bottom: 2px; }
+		.pre-label { margin-top: 8px; font-size: 13px; color: #888; }
 	</style>
 </head>
 <body>
@@ -98,8 +103,6 @@
 	</table>
 
 	<p>
-		I just asked Google Gemini to whip this up and after 10 minutes I got this result lmao. Good enough I guess.
-		<br><br>
 		Database content from <a href="https://gwe.dpdns.org/calcupedia/Calculator_self-test">Calcupedia</a> and various other sources.<br>© 2026 GamingWithEvets Inc.
 	</p>
 </div>
@@ -130,18 +133,67 @@
 
 		let entries = Object.entries(rawData).map(([key, val]) => ({ key, ...val }));
 
-		// Search Filter
 		entries = entries.filter(e => {
-			const modelMatch = (e.model || "").toLowerCase().includes(query);
+			let modelNames = [];
+			if (Array.isArray(e.model)) {
+				modelNames = e.model.map(m => m.name || "");
+			}
+			if (Array.isArray(e.prenames)) {
+				modelNames = modelNames.concat(e.prenames.map(p => p.name || ""));
+			}
+			
+			let modelMatch = modelNames.some(name => name.toLowerCase().includes(query));
+			if (!e.model || e.model.length === 0) {
+				if ("P mode model".toLowerCase().includes(query)) {
+					modelMatch = true;
+				}
+			}
+			
 			const keyMatch = e.key.toLowerCase().includes(query);
-			const prefix = HWID_MAP[e.hwid] || "";
+			const prefix = HWID_MAP[e.hwid] || "ROM ";
 			const fullMatch = (prefix + e.key).toLowerCase().includes(query);
-			return modelMatch || keyMatch || fullMatch;
+			
+			let revisionMatch = false;
+			if (e.checksums) {
+				Object.entries(e.checksums).forEach(([rev, info]) => {
+					if (rev.toLowerCase().includes(query)) {
+						revisionMatch = true;
+					}
+					
+					if (Array.isArray(info)) {
+						info.forEach(innerItem => {
+							if (innerItem.name && innerItem.name.toLowerCase().includes(query)) {
+								revisionMatch = true;
+							}
+						});
+					} else {
+						if (info.y && info.y.toLowerCase().includes(query)) {
+							revisionMatch = true;
+						}
+						const isX = info.x === true;
+						const vString = `${prefix}${isX ? '' : '-'}${e.key}${isX ? 'X' : ''}`;
+						if (vString.toLowerCase().includes(query)) {
+							revisionMatch = true;
+						}
+					}
+				});
+			}
+			
+			return modelMatch || keyMatch || fullMatch || revisionMatch;
 		});
 
-		// Sort Logic
 		entries.sort((a, b) => {
-			if (sortBy === 'model') return (a.model || "").localeCompare(b.model || "");
+			const prefixA = HWID_MAP[a.hwid] || "ROM ";
+			const prefixB = HWID_MAP[b.hwid] || "ROM ";
+			
+			if (prefixA === "ROM " && prefixB !== "ROM ") return -1;
+			if (prefixB === "ROM " && prefixA !== "ROM ") return 1;
+
+			if (sortBy === 'model') {
+				const modelA = Array.isArray(a.model) && a.model[0] ? a.model[0].name : "P mode model";
+				const modelB = Array.isArray(b.model) && b.model[0] ? b.model[0].name : "P mode model";
+				return modelA.localeCompare(modelB);
+			}
 			if (sortBy === 'hwid') return (a.hwid || 0) - (b.hwid || 0);
 			return a.key.localeCompare(b.key, undefined, {numeric: true});
 		});
@@ -158,17 +210,47 @@
 			let checkContent = "";
 			if (typeof item.checksums !== 'undefined') {
 				Object.entries(item.checksums).forEach(([rev, info]) => {
-					if (typeof info === 'string') {
+					if (Array.isArray(info)) {
+						let subModelsContent = "";
+						let separator = ":<br>";
+						
+						let processedInfo = info.map(inf => {
+							let nameText = inf.name || "";
+							let noteText = inf.note || "";
+							if (noteText) {
+								noteText = noteText.trim();
+								if (!noteText.startsWith('(') || !noteText.endsWith(')')) {
+									noteText = `(${noteText})`;
+								}
+							}
+							if (query) {
+								const escapeRegex = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+								const regex = new RegExp(`(${escapeRegex})`, "gi");
+								if (nameText.toLowerCase().includes(query)) nameText = nameText.replace(regex, "<mark>$1</mark>");
+							}
+							return `${nameText}${noteText ? ` <small style="color:#888">${noteText}</small>` : ''}`;
+						});
+
+						if (processedInfo.length === 1) {
+							subModelsContent = processedInfo[0];
+							separator = ": ";
+						} else if (processedInfo.length >= 2) {
+							subModelsContent = `<ul class="rev-model-list">`;
+							processedInfo.forEach(html => {
+								subModelsContent += `<li>${html}</li>`;
+							});
+							subModelsContent += `</ul>`;
+						}
+						
 						checkContent += `
 							<div class="revision-box rev-standard">
-								<span><b>${rev}</b>: ${info}</span>
+								<span><b>${rev}</b>${separator}${subModelsContent}</span>
 							</div>`;
 					} else {
 						const isX = info.x === true;
 						const vString = `${prefix}${isX ? '' : '-'}${item.key}${isX ? 'X' : ''}`;
 						const preBadge = info.z ? `<span class="badge-pre">PRE-RELEASE</span>` : "";
 						
-						// Formatting Revision Text based on Prefix
 						let revDisplay = "";
 						if (["EY", "FY"].includes(prefix)) {
 							revDisplay = !info.w ? `V.<b>${rev}</b>` : `Ver<b>${rev}</b>`;
@@ -190,10 +272,45 @@
 				});
 
 			} else checkContent += `No data.`
+			
+			let displayModelHtml = "";
+			if (Array.isArray(item.model) && item.model.length > 0) {
+				if (item.model.length === 1) {
+					displayModelHtml = `<span class="model-name">${item.model[0].name}</span>`;
+				} else {
+					displayModelHtml = `<ul class="rev-model-list">`;
+					item.model.forEach(m => {
+						displayModelHtml += `<li><span class="model-name">${m.name}</span></li>`;
+					});
+					displayModelHtml += `</ul>`;
+				}
+			} else {
+				let baseText = "P mode model";
+				if (query && baseText.toLowerCase().includes(query)) {
+					const escapeRegex = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+					const regex = new RegExp(`(${escapeRegex})`, "gi");
+					baseText = baseText.replace(regex, "<mark>$1</mark>");
+				}
+				displayModelHtml = `<span class="model-name">${baseText}</span>`;
+			}
+
+			if (Array.isArray(item.prenames) && item.prenames.length > 0) {
+				displayModelHtml += `<div class="pre-label">Pre-release names:</div>`;
+				if (item.prenames.length === 1) {
+					displayModelHtml += `<span class="model-name" style="color: #bbb;">${item.prenames[0].name}</span>`;
+				} else {
+					displayModelHtml += `<ul class="rev-model-list" style="color: #bbb;">`;
+					item.prenames.forEach(p => {
+						displayModelHtml += `<li><span class="model-name">${p.name}</span></li>`;
+					});
+					displayModelHtml += `</ul>`;
+				}
+			}
+			
 			const code = item.key.includes("ES") ? item.key.slice(2) : item.key; 
 			row.innerHTML = `
 				<td><span class="ver-code"><span class="prefix">${prefix}</span>${code}</span></td>
-				<td><span class="model-name">${item.model || 'P mode model'}</span></td>
+				<td>${displayModelHtml}</td>
 				<td>${checkContent}</td>
 			`;
 			tbody.appendChild(row);
