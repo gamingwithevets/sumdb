@@ -930,11 +930,17 @@
 	},
 	"531": {
 		"hwid": 6,
-		"model": [{"name": "fx-JP900CWS"}]
+		"model": [{"name": "fx-JP900CWS"}],
+		"checksums": {
+			"A": {"y": "90A7"}
+		}
 	},
 	"535": {
 		"hwid": 6,
-		"model": [{"name": "fx-97SG CW"}]
+		"model": [{"name": "fx-97SG CW"}],
+		"checksums": {
+			"A": {}
+		}
 	},
 	"540": {
 		"hwid": 6,
@@ -956,11 +962,17 @@
 	},
 	"544": {
 		"hwid": 6,
-		"model": [{"name": "fx-8200 AU II"}]
+		"model": [{"name": "fx-8200 AU II"}],
+		"checksums": {
+			"A": {}
+		}
 	},
 	"546": {
 		"hwid": 6,
-		"model": [{"name": "fx-570MY CW"}]
+		"model": [{"name": "fx-570MY CW"}],
+		"checksums": {
+			"A": {}
+		}
 	},
 	"593": {
 		"hwid": 6,
