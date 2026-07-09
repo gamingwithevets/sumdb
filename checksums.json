@@ -1,4 +1,24 @@
 {
+	"ES010": {
+		"checksums": {
+			"P010": [
+				{"name": "fx-82SOLAR II", "note": "old version"}
+			],
+			"P100": [
+				{"name": "fx-260SOLAR II", "note": "old version"}
+			]
+		}
+	},
+	"ES011": {
+		"checksums": {
+			"P010": [
+				{"name": "fx-82SOLAR II"}
+			],
+			"P100": [
+				{"name": "fx-260SOLAR II"}
+			]
+		}
+	},
 	"ES013": {
 		"checksums": {
 			"P3": [
@@ -68,6 +88,82 @@
 		"checksums": {
 			"P0": [
 				{"name": "fx-50FH"}
+			]
+		}
+	},
+	"ES502": {
+		"checksums": {
+			"P100": [
+				{"name": "fx-82MS"},
+				{"name": "fx-85MS"},
+				{"name": "fx-350MS"}
+			]
+		}
+	},
+	"ES504": {
+		"checksums": {
+			"P100": [
+				{"name": "fx-85MS"}
+			],
+			"P110": [
+				{"name": "fx-JUNIOR PLUS"}
+			]
+		}
+	},
+	"ES505": {
+		"checksums": {
+			"P000": [
+				{"name": "fx-500MS"}
+			]
+		}
+	},
+	"ES506": {
+		"checksums": {
+			"P000": [
+				{"name": "fx-570MS"}
+			]
+		}
+	},
+	"ES507": {
+		"checksums": {
+			"P100": [
+				{"name": "fx-82MS"},
+				{"name": "fx-300MS"}
+			]
+		}
+	},
+	"ES508": {
+		"checksums": {
+			"P001": [
+				{"name": "fx-100MS"},
+			]
+		}
+	},
+	"ES509": {
+		"checksums": {
+			"P000": [
+				{"name": "fx-991MS"}
+			]
+		}
+	},
+	"ES510": {
+		"checksums": {
+			"P100": [
+				{"name": "fx-82MS 2nd edition"}
+			]
+		}
+	},
+	"ES511": {
+		"checksums": {
+			"P000": [
+				{"name": "fx-500MS 2nd edition"}
+			]
+		}
+	},
+	"ES512": {
+		"checksums": {
+			"P000": [
+				{"name": "fx-991MS 2nd edition"}
 			]
 		}
 	},
@@ -311,7 +407,7 @@
 	},
 	"090": {
 		"hwid": 5,
-		"model": [{"name": "Graph Light"}],
+		"model": [{"name": "GRAPH LIGHT"}],
 		"checksums": {
 			"S1": {"y": "75E6", "z": true},
 			"P2": {"y": "6E66", "z": true},
@@ -320,7 +416,7 @@
 	},
 	"091": {
 		"hwid": 5,
-		"model": [{"name": "Graph Light+"}],
+		"model": [{"name": "GRAPH LIGHT+"}],
 		"checksums": {
 			"S?": {"z": true},
 			"P2": {"y": "1E7F", "z": true},
@@ -1197,7 +1293,7 @@
 	},
 	"847": {
 		"hwid": 4,
-		"model": [{"name": "fx-115ES PLUS 2nd edition"}, {"name": "fx-991ES PLUS C 2nd edition"}],
+		"model": [{"name": "fx-115ES PLUS 2nd edition"}, {"name": "fx-991ES PLUS C 2nd edition", "note": "early models maybe?"}],
 		"checksums": {
 			"A": {"x": false, "y": "3C5D"}
 		}
@@ -1299,7 +1395,7 @@
 	},
 	"875": {
 		"hwid": 4,
-		"model": [{"name": "Graph Math+"}]
+		"model": [{"name": "GRAPH MATH+"}]
 	},
 	"876": {
 		"hwid": 4,
@@ -1307,6 +1403,6 @@
 	},
 	"877": {
 		"hwid": 4,
-		"model": [{"name": "fx-1AU Graph"}]
+		"model": [{"name": "fx-1AU GRAPH"}]
 	}
 }
