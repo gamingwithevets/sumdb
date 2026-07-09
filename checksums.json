@@ -2,7 +2,7 @@
 	"ES013": {
 		"checksums": {
 			"P3": [
-				{"name": "fx-82ES"},
+				{"name": "fx-82ES", "note": "very early version"},
 				{"name": "fx-350ES", "note": "very early version"}
 			]
 		}
@@ -918,7 +918,10 @@
 	},
 	"528": {
 		"hwid": 6,
-		"model": [{"name": "fx-999CN CW II"}]
+		"model": [{"name": "fx-999CN CW II"}],
+		"checksums": {
+			"A": {"y": "FDCE"}
+		}
 	},
 	"529": {
 		"hwid": 6,

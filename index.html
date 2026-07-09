@@ -23,6 +23,21 @@
 		header { margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
 		h1 { color: var(--accent); margin: 0; font-size: 24px; letter-spacing: -0.5px; }
 		
+		.discord-callout {
+			margin-bottom: 20px;
+			font-size: 15px;
+			color: var(--text);
+		}
+		.discord-callout a {
+			color: var(--accent);
+			text-decoration: none;
+			font-weight: bold;
+			border-bottom: 1px dashed var(--accent);
+		}
+		.discord-callout a:hover {
+			border-bottom-style: solid;
+		}
+
 		.controls {
 			display: grid;
 			grid-template-columns: 2fr 1fr;
@@ -40,16 +55,32 @@
 		}
 		.search-bar:focus { border-color: var(--accent); }
 		
+		.table-container {
+			max-height: 650px;
+			overflow: auto;
+			border-radius: 12px;
+			border: 1px solid var(--border);
+			background: var(--card);
+			margin-bottom: 25px;
+		}
 		table {
 			width: 100%;
 			border-collapse: separate;
 			border-spacing: 0;
-			background: var(--card);
-			border-radius: 12px;
-			border: 1px solid var(--border);
-			overflow: hidden;
 		}
-		th { background: #222; color: #888; padding: 16px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+		th {
+			background: #222;
+			color: #888;
+			padding: 16px;
+			text-align: left;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			position: sticky;
+			top: 0;
+			z-index: 10;
+			border-bottom: 1px solid var(--border);
+		}
 		td { padding: 16px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
 		tr:last-child td { border-bottom: none; }
 		tr:hover { background: #202020; }
@@ -82,6 +113,10 @@
 		</div>
 	</header>
 
+	<p class="discord-callout">
+		Have a version, revision or checksum that we don't have? <a href="https://discord.gg/bG9BCJ5MW3" target="_blank">Join our Discord!</a>
+	</p>
+
 	<div class="controls">
 		<input type="text" id="searchBar" class="search-bar" placeholder="Filter by model, version, or checksum..." onkeyup="processData()">
 		<select id="sortSelect" class="sort-select" onchange="processData()">
@@ -91,19 +126,21 @@
 		</select>
 	</div>
 
-	<table id="mainTable">
-		<thead>
-			<tr>
-				<th style="width: 20%;">Version Code</th>
-				<th style="width: 35%;">Model Identity</th>
-				<th>Revision Details & Integrity</th>
-			</tr>
-		</thead>
-		<tbody id="tableBody"></tbody>
-	</table>
+	<div class="table-container">
+		<table id="mainTable">
+			<thead>
+				<tr>
+					<th style="width: 20%;">Version Code</th>
+					<th style="width: 35%;">Model Identity</th>
+					<th>Revision Details & Integrity</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody"></tbody>
+		</table>
+	</div>
 
 	<p>
-		Database content from <a href="https://gwe.dpdns.org/calcupedia/Calculator_self-test">Calcupedia</a> and various other sources.<br>© 2026 GamingWithEvets Inc.
+		Database content from various sources and community contributions.<br>This website © 2026 GamingWithEvets Inc.
 	</p>
 </div>
 
